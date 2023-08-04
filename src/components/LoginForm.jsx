@@ -29,9 +29,23 @@ function LoginForm({ user, setUser }) {
         setUsername("");
         setPassword("");
       })
-      .catch((error) => alert(error.response.data.error))
+      .catch((error) => console.log(error.response.data.error))
       .finally(() => setLoading(false));
   };
+
+  //   loginService
+  //     .login({ username, password })
+  //     .then((res) => {
+  //       window.localStorage.setItem("loggedPhonebookUser", JSON.stringify(res));
+  //       personService.setToken(res.token);
+
+  //       setUser(res);
+  //       setUsername("");
+  //       setPassword("");
+  //     })
+  //     .catch((error) => alert(error.response.data.error))
+  //     .finally(() => setLoading(false));
+  // };
 
   if (loading) {
     return (

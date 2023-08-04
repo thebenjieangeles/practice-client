@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "https://prectice-app.onrender.com/api/users";
+const baseUrl = "/api/users";
 
 async function register(credentials) {
   const response = await axios.post(baseUrl, credentials);
