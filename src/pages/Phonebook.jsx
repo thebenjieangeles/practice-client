@@ -35,7 +35,7 @@ function Phonebook({ user, setUser }) {
   }
 
   return (
-    <div className="min-h-screen  flex flex-col gap-4 p-4">
+    <div className="min-h-screen  flex flex-col gap-5 p-4">
       <div className="flex flex-col items-center text-center gap-8 mt-4 text-4xl">
         <div>
           <h1 className="font-semibold">Phonebook</h1>
