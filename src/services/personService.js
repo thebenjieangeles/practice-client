@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "/api",
+  baseURL: "/api/persons",
   headers: {
     common: {
       "Content-Type": "multipart/form-data",
